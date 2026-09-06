@@ -1,0 +1,26 @@
+{
+  "name": "xyx-relayer",
+  "version": "0.1.0",
+  "description": "Off-chain relayer for XYX — watches TaskCreated events, signs EIP-712 A2A messages with the agent's session key, and submits via submitMessageViaSessionKey so agents don't pay gas.",
+  "type": "module",
+  "main": "src/relayer.ts",
+  "scripts": {
+    "dev": "tsx watch src/relayer.ts",
+    "start": "tsx src/relayer.ts",
+    "start:dry": "DRY_RUN=true tsx src/relayer.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "viem": "^2.21.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsx": "^4.16.0",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

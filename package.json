@@ -1,0 +1,22 @@
+{
+  "name": "xyx-core",
+  "version": "1.0.0",
+  "description": "**XYX = \"Expose, Yield, Execute\"** — Coordination layer for the agent economy.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "viem": "^2.56.3",
+    "zod": "^4.5.4"
+  }
+}
